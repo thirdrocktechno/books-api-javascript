@@ -1,0 +1,20 @@
+version: "3"
+services:
+  books_backend:
+    container_name: nodejs
+    restart: on-failure
+    build: ./
+    ports:
+      - "1338:1338"
+    volumes:
+      - .:/app
+    links:
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db

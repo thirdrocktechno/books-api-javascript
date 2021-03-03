@@ -1,0 +1,28 @@
+components:
+  schemas:
+    LoginRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      example:
+        email: "Hey, This is author email."
+        password: "*************"
+    BookRequest:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+      example:
+        title: "This is title of book."
+        description: "This is title of description."
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: authorization 
+  

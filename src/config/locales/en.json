@@ -1,0 +1,22 @@
+{
+  "jwt": {
+    "expired": "Your session has expired. Please Login again."
+  },
+  "userMessage": {
+    "tokenExpired": "Oops! This URL in not valid anymore or expired.",
+    "notExist": "Account does not exist with the entered email.",
+    "invalidCredential": "Incorrect email or password",
+    "emailRequired": "Email Should not be blank.",
+    "emailNotExists": "Account with email '%s' does not exists.",
+    "created": "User created successfully.",
+    "unauthorized": "You are not authorized perform this operation."
+  },
+  "bookMessage": {
+    "retrieved": "Book retrieved successfully.",
+    "created": "Book created successfully.",
+    "deleted": "Book deleted successfully.",
+    "notExist": "Book does not exist.",
+    "invalidId": "Invalid book id",
+    "unAuthorizedAuthor": "You are not authorized perform this operation. Author can't delete other author's book."
+  }
+}
